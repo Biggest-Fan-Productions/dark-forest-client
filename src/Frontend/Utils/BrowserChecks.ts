@@ -32,7 +32,7 @@ export const isMobileOrTablet = () => {
     )
       check = true;
   })(navigator.userAgent || navigator.vendor || 'opera' in window);
-  return check;
+  return false;
 };
 
 const isSupportedBrowser = async () => isChrome() || isFirefox() || (await isBrave());
